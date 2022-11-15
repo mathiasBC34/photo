@@ -1,0 +1,91 @@
+body{
+    display: grid;
+    grid-template-rows: repeat(1fr, 0.5fr, 1fr);
+    grid-template-columns: repeat();
+    height: 800px;
+    width: 600px;
+}
+
+.cotainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    
+}
+
+h1{
+    color: grey;
+    text-align: center;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+    font-size: calc(75% + 3rem) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manger_image{
+    grid-column: 1/1;
+    grid-row: 1/1;   
+}
+
+.manger_text{
+    grid-column: 1/1;
+    grid-row: 1/1   ;
+}
+
+.optimiser_image{
+    grid-column: 2/2;
+    grid-row: 1/1;
+    
+}
+
+.optimiser_test{
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+
+.cotainer2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-self:flex-start;
+}
+
+.deplacer_image, .deplacer_text{
+    grid-column: 1/1;
+    grid-row: 2/2;
+    width: 75%;
+    justify-self: flex-start;
+}
+
+.dechet_text, .dechet_image{
+    grid-column: 2/2;
+    grid-row: 1/1;
+    width: 75%;
+    justify-self: flex-start;
+}
+
+.numerique_image, .numerique_text{
+    grid-column: 3/3;
+    grid-row: 2/2;
+    width: 75%;
+    justify-self: flex-start;
+}
+
+.cotainer3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.choisir_image, .choisir_text{
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+.gerer_image, .gerer_text{
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
